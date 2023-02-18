@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    form(method="POST", action="/new")
+        p
+            label(for="text") Text:
+            input(type="text", name="text", id="text")
+        p
+            label(for="username") Username:
+            input(type="text", name="username", id="username")
+        button(type="submit") Submit
